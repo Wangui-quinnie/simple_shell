@@ -16,7 +16,7 @@ char **av = NULL;
 
 wordcount = splitString(buffer);
 if (!wordcount)
-return NULL;
+return (NULL);
 av = malloc((wordcount + 1) * sizeof(char *));
 if (av == NULL)
 exit(1);
@@ -28,5 +28,5 @@ token = strtok(NULL, delimiter);
 x++;
 }
 av[x] = NULL;
-return av;
+return (av);
 }
