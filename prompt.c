@@ -7,7 +7,7 @@
 */
 int showPrompt(void)
 {
-char *prompt = "$ ";
+char *prompt = "# ";
 ssize_t writeCount = 0;
 
 if (isatty(STDIN_FILENO) == 1)
